@@ -30,7 +30,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-"In this project, we will be using Azure to simulate the implementation of Active Directory onto a Windows Server VM, which can also be called the Domain Controller. The first step in this project is the creation of the Windows VMs. In Azure, create a Windows Server VM and a normal Windows 10 VM. Keep track of the username and password of both VMs in a note document. Also, make sure that for the Windows 10 VM, you select the same resource group and virtual network as the domain controller, because this lab wouldn't work without them being on the same virtual network.
+In this project, we will be using Azure to simulate the implementation of Active Directory onto a Windows Server VM, which can also be called the Domain Controller. The first step in this project is the creation of the Windows VMs. In Azure, create a Windows Server VM and a normal Windows 10 VM. Keep track of the username and password of both VMs in a note document. Also, make sure that for the Windows 10 VM, you select the same resource group and virtual network as the domain controller, because this lab wouldn't work without them being on the same virtual network.
 
 <br />
 
@@ -50,4 +50,5 @@ Open Active Directory and create a new Organizational Unit in the domain folder.
 </p>
 <br />
 
-<p>To check if the DNS settings worked, open the command line in Azure and type 'ipconfig /all.' After that, go to the settings of the VM: Settings > About > Rename this PC > Change the domain to the name of the domain controller (name.name) and log in to the domain admin account. Return to the same VM, and in settings, go to About > Remote Desktop > Select users who can remote access this PC > Add. In the empty box, type 'domain users' and click 'Check Names.' Now, all domain users are allowed to log into the normal Windows 10 computer. On the Windows Server side, all users can be seen in Active Directory in the Users tab. With that done, we have successfully used Azure to implement an on-premises Active Directory solution."</p>
+<p>To check if the DNS settings worked, open the command line in Azure and type 'ipconfig /all.' After that, go to the settings of the VM: Settings > About > Rename this PC > Change the domain to the name of the domain controller (name.name) and log in to the domain admin account. Return to the same VM, and in settings, go to About > Remote Desktop > Select users who can remote access this PC > Add. In the empty box, type 'domain users' and click 'Check Names.' Now, all domain users are allowed to log into the normal Windows 10 computer. On the Windows Server side, all users can be seen in Active Directory in the Users tab. With that done, we have successfully used Azure to implement an on-premises Active Directory solution.
+</p>
