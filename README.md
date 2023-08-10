@@ -26,7 +26,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <h2>Deployment and Configuration Steps</h2>
 
-<p>
+<p align="center">
   
 ![image](https://github.com/gabrielS200/configure-ad/assets/141781540/14224c7d-9b85-4fb1-9797-dbd695470f80)
 
@@ -36,7 +36,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <br />
 
-<p>
+<p align="center">
   
 ![image](https://github.com/gabrielS200/configure-ad/assets/141781540/0ae51ec2-8753-4757-bd8b-85a517bc503a)
 
@@ -46,7 +46,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <br />
 
-<p>
+<p align="center">
   
 ![image](https://github.com/gabrielS200/configure-ad/assets/141781540/47cbf134-690f-4b2a-93c3-3e1d3455a7b8)
 
@@ -55,7 +55,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
   Open Active Directory and create a new Organizational Unit in the domain folder. Call it '_Employees.' Create a new user in the employee tab and name it whatever you want. Now, go back to Azure and set the DNS of the non-server VM to the IP address of the domain controller. To do that, find the private IP address of the Windows Server VM, copy it, then go to the other VM and find its virtual NIC. In the Virtual NIC settings, go to DNS servers and click 'Custom,' then paste the private IP address of the Domain Controller. Restart the Windows 10 VM.
 </p>
 <br />
-<p>
+
+<p align="center">
 
 ![image](https://github.com/gabrielS200/configure-ad/assets/141781540/4f0fa86a-70e1-409c-9cc2-0f0ca47e06f8)
 
